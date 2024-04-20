@@ -1,0 +1,21 @@
+    <ons-page id="page5">
+        <ons-toolbar>
+            <div class="left"><ons-back-button>Página 5 (Componente 3)</ons-back-button></div>
+            <div class="center"></div>
+        </ons-toolbar>
+        <p>This is the fifth page.</p>
+        <p>
+            <ons-button
+                    onclick="ons.notification.toast('Hi there!', { timeout: 1000, animation: 'fall' })"
+            >
+                Queue notification toast (top)
+            </ons-button>
+            <br><br>
+            <ons-button onclick="myToast.toggle()">Toggle element toast (bottom)</ons-button>
+        </p>
+        <ons-fab position="bottom right">+</ons-fab>
+        <ons-toast id="myToast" animation="ascend">
+            FABs up!
+            <button onclick="myToast.hide()">ok</button>
+        </ons-toast>
+    </ons-page>
